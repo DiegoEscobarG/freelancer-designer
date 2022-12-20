@@ -21,11 +21,13 @@ html {
 }
 
 /* scroll-snal */
-.services,
-.main-nav,
-.section-contact{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+@media (min-width: 768px){
+    .services,
+    .main-nav,
+    .section-contact{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
 }
 
 *, *::before, *::after{
@@ -114,6 +116,7 @@ h1, h2, h3 {
     color: var(--white);
     text-decoration: none;
     padding: 1rem;
+    text-align: center;
 }
 
 .main-nav a:hover {
