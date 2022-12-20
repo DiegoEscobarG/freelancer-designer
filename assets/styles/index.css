@@ -3,12 +3,14 @@
 
     --white: #ffffff;
     --black: #000000;
-    --black-2: #212121;
+    --black-2: #0c0d0d;
+    --black-3: #101217;
+    --black-4: #373739;
     --clear-black: rgba(0,0,0, .5);
     --yellow: #ffc107;
     --blue: #0097A7;
-    --blue-2: #dfe9f3;
-    --grey: #757575;
+    --grey: #2b2b2b;
+
 
 
 }
@@ -24,7 +26,8 @@ html {
 @media (min-width: 768px){
     .services,
     .main-nav,
-    .section-contact{
+    .section-contact,
+    footer{
         scroll-snap-align: center;
         scroll-snap-stop: always;
     }
@@ -38,7 +41,7 @@ body{
     /* 1 rem = 10px */
     font-size: 16px;
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--blue-2) 0%, var(--white) 100%);
+    background-image: linear-gradient(to top, var(--black) 0%, var(--black-2) 100%);
 }
 
 .btn{
@@ -63,12 +66,13 @@ body{
 }
 
 .shadow{
-    box-shadow: 0px 4px 4px 0px rgba(117,117,117,0.8);
+    box-shadow: 8px 8px 0px 0px rgba(150,217,252,1);
 }
 
 /* fonts */
 h1{
     font-size: 3.8rem;
+    color: var(--white);
 }
 
 h2{
@@ -81,6 +85,7 @@ h3{
 
 h1, h2, h3 {
     text-align: center;
+    color: var(--white);
 }
 
 /* titles */
@@ -95,7 +100,7 @@ h1, h2, h3 {
 
 /* main nav */
 .nav-background{
-    background-color: var(--blue);
+    background-color: var(--black-3);
 }
 
 .main-nav, .container{
@@ -121,7 +126,7 @@ h1, h2, h3 {
 
 .main-nav a:hover {
     color: var(--black);
-    background-color: var(--yellow);
+    background-color: var(--blue);
     transition: .3s;
 }
 
@@ -158,7 +163,7 @@ h1, h2, h3 {
 main.container{
     margin-top: 4rem;
     padding: 2rem;
-    background-color: var(--white);
+    background-color: var(--black-2);
     border-radius: 1rem;
 }
 
@@ -187,6 +192,7 @@ main.container{
 .service p{
     line-height: 2;
     text-align: center;
+    color: var(--white);
 }
 
 .service .icons{
@@ -218,6 +224,7 @@ form legend{
     font-weight: bold;
     margin-bottom: 2rem;
     color: var(--yellow);
+    text-align: center;
 }
 
 @media (min-width: 768px){
@@ -275,4 +282,5 @@ textarea {
 /* footer */
 footer{
     text-align: center;
+    color: var(--white);
 }
