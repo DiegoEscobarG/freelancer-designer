@@ -22,17 +22,6 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-/* scroll-snal */
-@media (min-width: 768px){
-    .services,
-    .main-nav,
-    .section-contact,
-    footer{
-        scroll-snap-align: center;
-        scroll-snap-stop: always;
-    }
-}
-
 *, *::before, *::after{
     box-sizing: inherit;
 }
@@ -195,7 +184,7 @@ main.container{
     color: var(--white);
 }
 
-.service .icons{
+.icons{
     width: 15rem;
     height: 15rem;
     background-color: var(--yellow);
@@ -280,7 +269,41 @@ textarea {
 }
 
 /* footer */
-footer{
+.footer{
     text-align: center;
     color: var(--white);
+}
+
+/* web_design */
+.services--web_design{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.div-bg-img{
+    width: 20rem;
+    height: 12rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.div-bg-img--frontendstore{
+    background-image: url(../img/frontendstore.png);
+}
+
+.div-bg-img--frontendstore:hover{
+    box-shadow: 0px 0px 80px 0px rgba(87,0,87,1);
+}
+
+.div-bg-img--coffeeblog{
+    background-image: url(../img/coffeeblog.png);
+}
+
+.div-bg-img--coffeeblog:hover{
+    box-shadow: 0px 0px 80px 0px rgba(69,40,0,1);
+}
+
+.div-bg-img--hover:hover{
+    width: 24rem;
+    height: 14rem;
 }
