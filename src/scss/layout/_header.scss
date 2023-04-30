@@ -1,0 +1,12 @@
+@use '../base/variables' as V;
+.header{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        margin: 0;
+    }
+}
+

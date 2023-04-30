@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance Designer</title>
 
-    <!-- normalize -->
-    <link rel="preload" href="./assets/styles/normalize.css" as="style">
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- css link -->
-    <link rel="preload" href="./assets/styles/index.css" as="style">
-    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="preload" href="./build/css/app.css" as="style">
+    <link rel="stylesheet" href="./build/css/app.css">
 </head>
 <body>
 
-    <header>
+
+    <!--HEADER(SASS)-->
+    <header class="header">
         <!-- page's title -->
-        <h1 class="title">Diego Escobar <span>Freelancer</span></h1>
+        <h1 class="title">Diego Escobar</h1>
     </header>
 
-    <div class="nav-background">
-        <nav class="main-nav container">
+    <!--NAVIGATION(SASS)-->
+    <div class="nav-bg">
+        <nav class="main-nav">
             <a href="./index.html">Home</a>
             <a href="#">About Me</a>
             <a href="#">Customers</a>
@@ -33,10 +32,11 @@
         </nav>
     </div>
 
+    <!--SECTION-BG(SASS)-->
     <section class="section-bg">
         <div class="content-section-bg">
             <!-- page's subtitle -->
-            <h2>Design and Web Development <span>Freelance</span></h2>
+            <h2>Design and Web Development</h2>
             
             <div>
                 <!-- location's icon -->
