@@ -35,7 +35,7 @@ function imgs(done){
     const options = {
         optimizationLevel: 3
     }
-    src('src/img/**/*.{jpg, png}')
+    src('src/img/**/*.png')
         .pipe( cache(imagemin(options)) )
         .pipe(dest('build/img'))
     done();

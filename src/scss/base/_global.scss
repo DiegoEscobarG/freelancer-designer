@@ -12,7 +12,7 @@ html{
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
-    background-color: V.$dark_blue;
+    background-image: linear-gradient(to top, V.$black 0%, V.$black-2 100%);
     color: V.$white;
 }
 

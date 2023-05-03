@@ -6,22 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelance Designer</title>
 
-    <!-- normalize -->
-    <link rel="preload" href="./assets/styles/normalize.css" as="style">
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- css link -->
-    <link rel="preload" href="../assets/styles/index.css" as="style">
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="preload" href="../build/css/app.css" as="style">
+    <link rel="stylesheet" href="../build/css/app.css">
 </head>
 <body>
 
     <header>
         <!-- page's title -->
-        <h1 class="title">Diego Escobar <span>Freelancer</span></h1>
+        <h1 class="title">Diego Escobar</h1>
     </header>
 
     <div class="nav-background">
@@ -33,7 +29,7 @@
         </nav>
     </div>
     
-    <main class="container shadow">
+    <main class="container">
         <h2>My Web Designs</h2>
 
         <div class="services services--web_design">          
@@ -61,13 +57,25 @@
 
                 <a class="btn" href="https://coffeeblog-bydiegoescobar.netlify.app/" target="_blank">Visit Site</a>
             </section>
+
+            <section class="service">
+                <h3>Music Festival</h3>
+    
+                <div class="div-bg-img div-bg-img--hover div-bg-img--musicfestival">
+                    
+                </div>
+    
+                <p>This page is about a Music Fesival. The site is a Music Festival design, it contains a list of artists, a gallery and tickets for the event.</p>
+
+                <a class="btn" href="https://musicfestival-bydiegoescobar.netlify.app/" target="_blank">Visit Site</a>
+            </section>
         
            
         </div> <!--.services-->  
     </main>
 
 
-    <footer>
+    <footer class="footer">
         <!-- copyright message -->
         <p>All rights reserved. Diego Escobar Freelancer</p>
     </footer>
